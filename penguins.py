@@ -1,6 +1,7 @@
 import pandas as pd
 from sklearn.preprocessing import OneHotEncoder
 from plotter import Plotter
+from splitter import Splitter
 
 
 # Load the Penguin dataset
@@ -44,5 +45,12 @@ print(penguins_data_onehot.head())
 penguin_plot = Plotter(penguins_data, penguin=True)
 
 penguin_plot.plot()
+
+penguin_split = Splitter(penguins_data, penguin = True)
+
+features_train, features_test, target_train, target_test = penguin_split.split()
+
+print("Training target: ", target_train)
+print("Test target: ", target_test)
 
 

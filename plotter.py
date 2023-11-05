@@ -5,7 +5,7 @@ import pandas as pd
 class Plotter:
     def __init__(self, data, penguin):
         self.data = data
-        # If plotting penguin datset, penguin = true
+        # If plotting penguin datset, penguin = True
         self.penguin = penguin
     
     def plot(self):
