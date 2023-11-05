@@ -1,5 +1,7 @@
 import pandas as pd
 from sklearn.preprocessing import OneHotEncoder
+from plotter import Plotter
+
 
 # Load the Penguin dataset
 file_path = "C:/Users/Michael/source/repos/COMP472-A1/COMP472-A1-datasets/penguins.csv"
@@ -38,3 +40,9 @@ penguins_data_onehot = penguins_data_onehot.drop(['island', 'sex'], axis=1)
 # Display the modified dataset with 1-hot encoded features
 print("Method 1: 1-hot encoded dataset")
 print(penguins_data_onehot.head())
+
+penguin_plot = Plotter(penguins_data, penguin=True)
+
+penguin_plot.plot()
+
+
