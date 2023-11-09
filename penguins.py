@@ -2,7 +2,8 @@ import pandas as pd
 from sklearn.preprocessing import OneHotEncoder
 from plotter import Plotter
 from splitter import Splitter
-
+from baseMLP import BaseMLP
+from topMLP import TopMLP
 
 # Load the Penguin dataset
 file_path = "C:/Users/Michael/source/repos/COMP472-A1/COMP472-A1-datasets/penguins.csv"
@@ -52,5 +53,15 @@ features_train, features_test, target_train, target_test = penguin_split.split()
 
 print("Training target: ", target_train)
 print("Test target: ", target_test)
+
+# Train and test the Base-MLP classifier
+penguin_base_mlp = BaseMLP()
+
+penguin_base_mlp.base_mlp(features_train, features_test, target_train, target_test)
+
+# Train and test the Top-MLP classifier
+penguin_top_mlp = TopMLP()
+
+penguin_top_mlp.top_mlp(features_train, features_test, target_train, target_test)
 
 
