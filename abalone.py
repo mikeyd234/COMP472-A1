@@ -3,6 +3,7 @@ from plotter import Plotter
 from splitter import Splitter
 from baseMLP import BaseMLP
 from topMLP import TopMLP
+import logging
 
 # Access the dataset
 filepath = 'C:/Users/pavit/OneDrive/Documents/Fall_2023/COMP_472/COMP472-A1/COMP472-A1-datasets/abalone.csv'
@@ -34,3 +35,11 @@ abalone_base_mlp.base_mlp(features_train, features_test, target_train, target_te
 abalone_top_mlp = TopMLP()
 
 abalone_top_mlp.top_mlp(features_train, features_test, target_train, target_test)
+
+# IMPORTANT: CHANGE THIS TO 'a' FOR APPENDING, THIS IS FOR TESTING PURPOSES AT THE MOMENT
+logging.basicConfig(filename=f'abalone-performance.txt', filemode='w', level=logging.INFO)
+
+
+
+
+
