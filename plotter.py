@@ -5,10 +5,11 @@ import pandas as pd
 class Plotter:
     def __init__(self, data, penguin):
         self.data = data
-        # If plotting penguin datset, penguin = True
+        # If plotting penguin dataset, penguin = True
         self.penguin = penguin
     
     def plot(self):
+        """ Function for plotting the instances of an output class in a given dataset. """
         # Count the instances of the output classes
         if self.penguin:
             class_cnts = self.data['species'].value_counts()
