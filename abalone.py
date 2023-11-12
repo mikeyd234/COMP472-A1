@@ -32,6 +32,7 @@ print("2. Top MLP")
 method_choice = input("Enter 1 or 2: ")
 
 if method_choice == '1':
+    evaluate_mlp = EvaluateModel(model_name="BaseMLP", penguin=False)
     for i in range(5):
         print(f"Run {i + 1}")
         # Train and test the Base-MLP classifier
@@ -42,13 +43,20 @@ if method_choice == '1':
         # Unpack the results
         accuracy, precision, recall, f1, confusion_matrix, f1_macro, f1_weighted = result
 
-        evaluate_mlp = EvaluateModel(model_name = "BaseMLP", accuracy = accuracy, f1 = f1, macro_f1 = f1_macro, weighted_f1 = f1_weighted, confusion = confusion_matrix, precision = precision, recall = recall, penguin=False)
-
-        evaluate_mlp.evaluate()
+        evaluate_mlp.evaluate(
+            accuracy=accuracy,
+            f1=f1,
+            macro_f1=f1_macro,
+            weighted_f1=f1_weighted,
+            confusion=confusion_matrix,
+            precision=precision,
+            recall=recall
+        )
 
     evaluate_mlp.calculate_average_and_variance()
 
 if method_choice == '2':
+    evaluate_mlp = EvaluateModel(model_name="TopMLP", penguin=False)
     for i in range(5):
         print(f"Run {i + 1}")
         # Train and test the Top-MLP classifier
@@ -59,8 +67,14 @@ if method_choice == '2':
         # Unpack the results
         accuracy, precision, recall, f1, confusion_matrix, f1_macro, f1_weighted = result
 
-        evaluate_mlp = EvaluateModel(model_name = "TopMLP", accuracy = accuracy, f1 = f1, macro_f1 = f1_macro, weighted_f1 = f1_weighted, confusion = confusion_matrix, precision = precision, recall = recall, penguin=False)
-
-        evaluate_mlp.evaluate()
+        evaluate_mlp.evaluate(
+            accuracy=accuracy,
+            f1=f1,
+            macro_f1=f1_macro,
+            weighted_f1=f1_weighted,
+            confusion=confusion_matrix,
+            precision=precision,
+            recall=recall
+        )
 
     evaluate_mlp.calculate_average_and_variance()

@@ -21,7 +21,7 @@ class TopMLP:
     }
 
     # Create the Top Multi-Layered Perceptron classifier
-    clf = MLPClassifier(max_iter=2048)
+    clf = MLPClassifier(max_iter=1024)
 
     # Create an instance for GridSearchCV
     grid_search = GridSearchCV(clf, param_grid)

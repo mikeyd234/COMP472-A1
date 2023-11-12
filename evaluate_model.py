@@ -6,20 +6,13 @@ from sklearn.metrics import confusion_matrix, classification_report, accuracy_sc
 from sklearn.model_selection import GridSearchCV
 
 class EvaluateModel:
-    def __init__(self, model_name, accuracy, f1, macro_f1, weighted_f1, confusion, precision, recall, penguin):
+    def __init__(self, model_name, penguin):
         self.model_name = model_name
-        self.accuracy = accuracy
-        self.f1 = f1
-        self.macro_f1 = macro_f1
-        self.weighted_f1 = weighted_f1
-        self.confusion = confusion
-        self.precision = precision
-        self.recall = recall
         # If evaluating model with penguin dataset, penguin = True
         self.penguin = penguin
         self.runs = []
 
-    def evaluate(self):
+    def evaluate(self, accuracy, f1, macro_f1, weighted_f1, confusion, precision, recall):
         """ Function for evaluating the performance of a given model """
         # Open the file in append mode
         if self.penguin:
@@ -34,20 +27,20 @@ class EvaluateModel:
 
             # (B) Confusion Matrix
             file.write("\n(B) Confusion Matrix:\n")
-            file.write(f"{self.confusion}")
+            file.write(f"{confusion}")
 
             # (C) Precision, Recall, and F1-measure for each class
             file.write("\n(C) Precision, Recall, and F1-measure for each class:\n")
-            file.write(f"Precision: {self.precision}\n")
-            file.write(f"Recall: {self.recall}\n")
-            file.write(f"F1-measure: {self.f1}\n")
+            file.write(f"Precision: {precision}\n")
+            file.write(f"Recall: {recall}\n")
+            file.write(f"F1-measure: {f1}\n")
 
             # (D) Accuracy, Macro-average F1, and Weighted-average F1
             file.write("\n(D) Accuracy, Macro-average F1, and Weighted-average F1:\n")
-            file.write(f"Accuracy: {self.accuracy}\n")
-            file.write(f"Macro-average F1: {self.macro_f1}\n")
-            file.write(f"Weighted-average F1: {self.weighted_f1}\n")
-            self.runs.append({'accuracy': self.accuracy, 'macro_f1': self.macro_f1, 'weighted_f1': self.weighted_f1})
+            file.write(f"Accuracy: {accuracy}\n")
+            file.write(f"Macro-average F1: {macro_f1}\n")
+            file.write(f"Weighted-average F1: {weighted_f1}\n")
+            self.runs.append({'accuracy': accuracy, 'macro_f1': macro_f1, 'weighted_f1': weighted_f1})
 
     def calculate_average_and_variance(self):
         """ Function to calculate the average and variance of performance metrics across multiple runs """
