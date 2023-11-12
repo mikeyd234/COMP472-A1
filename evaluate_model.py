@@ -65,7 +65,7 @@ class EvaluateModel:
         else:
             file_name = "abalone-performance.txt"
 
-         with open(file_name, "a") as file:
+        with open(file_name, "a") as file:
             file.write("\n\n")
             file.write("*" * 50 + "\n")
             file.write(f"Average and Variance for {self.model_name}\n")
