@@ -4,6 +4,7 @@ from plotter import Plotter
 from splitter import Splitter
 from baseMLP import BaseMLP
 from topMLP import TopMLP
+from evaluate_model import EvaluateModel
 
 # Load the Penguin dataset
 file_path = "C:/Users/Michael/source/repos/COMP472-A1/COMP472-A1-datasets/penguins.csv"
@@ -85,14 +86,39 @@ features_train, features_test, target_train, target_test = penguin_split.split()
 print("Training target: ", target_train)
 print("Test target: ", target_test)
 
-# Train and test the Base-MLP classifier
-penguin_base_mlp = BaseMLP()
+print("Select the machine learning model:")
+print("1. Base MLP")
+print("2. Top MLP")
+method_choice = input("Enter 1 or 2: ")
 
-penguin_base_mlp.base_mlp(features_train, features_test, target_train, target_test)
+if method_choice == '1':
+    for i in range(5):
+        print(f"Run {i + 1}")
+        # Train and test the Base-MLP classifier
+        result = BaseMLP.base_mlp(features_train, features_test, target_train, target_test)
 
-# Train and test the Top-MLP classifier
-penguin_top_mlp = TopMLP()
+        # Unpack the results
+        accuracy, precision, recall, f1, confusion_matrix, f1_macro, f1_weighted = result
 
-penguin_top_mlp.top_mlp(features_train, features_test, target_train, target_test)
+        evaluate_mlp = EvaluateModel(model_name = "BaseMLP", accuracy = accuracy, f1 = f1, macro_f1 = f1_macro, weighted_f1 = f1_weighted, confusion = confusion_matrix, precision = precision, recall = recall, penguin=True)
+
+        evaluate_mlp.evaluate()
+
+    evaluate_mlp.calculate_average_and_variance()
+
+if method_choice == '2':
+    for i in range(5):
+        print(f"Run {i + 1}")
+        # Train and test the Top-MLP classifier
+        result = TopMLP.top_mlp(features_train, features_test, target_train, target_test)
+
+        # Unpack the results
+        accuracy, precision, recall, f1, confusion_matrix, f1_macro, f1_weighted = result
+
+        evaluate_mlp = EvaluateModel(model_name = "TopMLP", accuracy = accuracy, f1 = f1, macro_f1 = f1_macro, weighted_f1 = f1_weighted, confusion = confusion_matrix, precision = precision, recall = recall, penguin=True)
+
+        evaluate_mlp.evaluate()
+
+    evaluate_mlp.calculate_average_and_variance()
 
 

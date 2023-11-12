@@ -1,0 +1,545 @@
+
+
+**************************************************
+BaseMLP
+**************************************************
+
+(B) Confusion Matrix:
+[[  0  50 293]
+ [  0 222  93]
+ [  0  74 313]]
+(C) Precision, Recall, and F1-measure for each class:
+Precision: [0.         0.6416185  0.44778255]
+Recall: [0.         0.7047619  0.80878553]
+F1-measure: [0.         0.67170953 0.57642726]
+
+(D) Accuracy, Macro-average F1, and Weighted-average F1:
+Accuracy: 0.5119617224880383
+Macro-average F1: 0.41604559566629423
+Weighted-average F1: 0.41594818213931795
+
+
+**************************************************
+BaseMLP
+**************************************************
+
+(B) Confusion Matrix:
+[[  0  15 315]
+ [  0 165 184]
+ [  0  27 339]]
+(C) Precision, Recall, and F1-measure for each class:
+Precision: [0.         0.79710145 0.40453461]
+Recall: [0.         0.47277937 0.92622951]
+F1-measure: [0.         0.59352518 0.56312292]
+
+(D) Accuracy, Macro-average F1, and Weighted-average F1:
+Accuracy: 0.48229665071770333
+Macro-average F1: 0.3855493678147184
+Weighted-average F1: 0.39544811273015
+
+
+**************************************************
+BaseMLP
+**************************************************
+
+(B) Confusion Matrix:
+[[  0  45 270]
+ [  0 240 117]
+ [  0  56 317]]
+(C) Precision, Recall, and F1-measure for each class:
+Precision: [0.         0.70381232 0.45028409]
+Recall: [0.         0.67226891 0.84986595]
+F1-measure: [0.         0.68767908 0.58867224]
+
+(D) Accuracy, Macro-average F1, and Weighted-average F1:
+Accuracy: 0.5330143540669856
+Macro-average F1: 0.42545044026395445
+Weighted-average F1: 0.4450489735175618
+
+
+**************************************************
+BaseMLP
+**************************************************
+
+(B) Confusion Matrix:
+[[ 44  56 220]
+ [  8 237  89]
+ [ 58  79 254]]
+(C) Precision, Recall, and F1-measure for each class:
+Precision: [0.4        0.63709677 0.45115453]
+Recall: [0.1375     0.70958084 0.64961637]
+F1-measure: [0.20465116 0.6713881  0.53249476]
+
+(D) Accuracy, Macro-average F1, and Weighted-average F1:
+Accuracy: 0.5119617224880383
+Macro-average F1: 0.46951134122785126
+Weighted-average F1: 0.47649516640105155
+
+
+**************************************************
+BaseMLP
+**************************************************
+
+(B) Confusion Matrix:
+[[ 54  52 225]
+ [  4 258  78]
+ [ 70  86 218]]
+(C) Precision, Recall, and F1-measure for each class:
+Precision: [0.421875   0.65151515 0.4184261 ]
+Recall: [0.16314199 0.75882353 0.5828877 ]
+F1-measure: [0.23529412 0.70108696 0.48715084]
+
+(D) Accuracy, Macro-average F1, and Weighted-average F1:
+Accuracy: 0.507177033492823
+Macro-average F1: 0.4745106373858749
+Weighted-average F1: 0.4769821354702287
+
+
+**************************************************
+TopMLP
+**************************************************
+
+(B) Confusion Matrix:
+[[182  71  64]
+ [ 28 266  35]
+ [218 101  80]]
+(C) Precision, Recall, and F1-measure for each class:
+Precision: [0.42523364 0.60730594 0.44692737]
+Recall: [0.57413249 0.80851064 0.20050125]
+F1-measure: [0.4885906  0.69361147 0.27681661]
+
+(D) Accuracy, Macro-average F1, and Weighted-average F1:
+Accuracy: 0.5052631578947369
+Macro-average F1: 0.4863395620986252
+Weighted-average F1: 0.4722786824619892
+
+
+**************************************************
+TopMLP
+**************************************************
+
+(B) Confusion Matrix:
+[[ 63  37 230]
+ [ 11 246  83]
+ [ 77  65 233]]
+(C) Precision, Recall, and F1-measure for each class:
+Precision: [0.41721854 0.70689655 0.42673993]
+Recall: [0.19090909 0.72352941 0.62133333]
+F1-measure: [0.26195426 0.71511628 0.50597177]
+
+(D) Accuracy, Macro-average F1, and Weighted-average F1:
+Accuracy: 0.5186602870813397
+Macro-average F1: 0.4943474369464824
+Weighted-average F1: 0.49696062680326225
+
+
+**************************************************
+BaseMLP
+**************************************************
+
+(B) Confusion Matrix:
+[[ 70  42 233]
+ [  5 242  76]
+ [ 67  71 239]]
+(C) Precision, Recall, and F1-measure for each class:
+Precision: [0.49295775 0.68169014 0.43613139]
+Recall: [0.20289855 0.74922601 0.63395225]
+F1-measure: [0.28747433 0.71386431 0.51675676]
+
+(D) Accuracy, Macro-average F1, and Weighted-average F1:
+Accuracy: 0.5272727272727272
+Macro-average F1: 0.506031798730096
+Weighted-average F1: 0.5019847972752183
+
+
+**************************************************
+BaseMLP
+**************************************************
+
+(B) Confusion Matrix:
+[[ 53  43 249]
+ [  3 241  79]
+ [ 53  71 253]]
+(C) Precision, Recall, and F1-measure for each class:
+Precision: [0.48623853 0.67887324 0.43545611]
+Recall: [0.15362319 0.74613003 0.67108753]
+F1-measure: [0.23348018 0.71091445 0.52818372]
+
+(D) Accuracy, Macro-average F1, and Weighted-average F1:
+Accuracy: 0.523444976076555
+Macro-average F1: 0.49085944885463223
+Weighted-average F1: 0.48736965596636267
+
+
+**************************************************
+BaseMLP
+**************************************************
+
+(B) Confusion Matrix:
+[[ 54  40 251]
+ [  3 241  79]
+ [ 51  68 258]]
+(C) Precision, Recall, and F1-measure for each class:
+Precision: [0.5        0.69054441 0.43877551]
+Recall: [0.15652174 0.74613003 0.68435013]
+F1-measure: [0.2384106  0.7172619  0.53471503]
+
+(D) Accuracy, Macro-average F1, and Weighted-average F1:
+Accuracy: 0.5291866028708134
+Macro-average F1: 0.4967958422317101
+Weighted-average F1: 0.4933156130469605
+
+
+**************************************************
+BaseMLP
+**************************************************
+
+(B) Confusion Matrix:
+[[ 62  44 239]
+ [  3 241  79]
+ [ 58  70 249]]
+(C) Precision, Recall, and F1-measure for each class:
+Precision: [0.50406504 0.67887324 0.43915344]
+Recall: [0.17971014 0.74613003 0.66047745]
+F1-measure: [0.26495726 0.71091445 0.52754237]
+
+(D) Accuracy, Macro-average F1, and Weighted-average F1:
+Accuracy: 0.5282296650717704
+Macro-average F1: 0.5011380307053024
+Weighted-average F1: 0.4975302389646804
+
+
+**************************************************
+BaseMLP
+**************************************************
+
+(B) Confusion Matrix:
+[[ 60  41 244]
+ [  5 242  76]
+ [ 58  70 249]]
+(C) Precision, Recall, and F1-measure for each class:
+Precision: [0.48780488 0.68555241 0.43760984]
+Recall: [0.17391304 0.74922601 0.66047745]
+F1-measure: [0.25641026 0.71597633 0.52642706]
+
+(D) Accuracy, Macro-average F1, and Weighted-average F1:
+Accuracy: 0.5272727272727272
+Macro-average F1: 0.4996045496939951
+Weighted-average F1: 0.49587071349788436
+
+
+**************************************************
+Average and Variance for BaseMLP
+**************************************************
+(A) Average Accuracy: 0.5272727272727272, Variance: 0.0
+(B) Average Macro-average F1: 0.4996045496939951, Variance: 0.0
+(C) Average Weighted-average F1: 0.49587071349788436, Variance: 0.0
+
+
+**************************************************
+BaseMLP
+**************************************************
+
+(B) Confusion Matrix:
+[[39  0  0]
+ [19  0  0]
+ [26  0  0]]
+(C) Precision, Recall, and F1-measure for each class:
+Precision: [0.46428571 0.         0.        ]
+Recall: [1. 0. 0.]
+F1-measure: [0.63414634 0.         0.        ]
+
+(D) Accuracy, Macro-average F1, and Weighted-average F1:
+Accuracy: 0.4642857142857143
+Macro-average F1: 0.21138211382113822
+Weighted-average F1: 0.2944250871080139
+
+
+**************************************************
+BaseMLP
+**************************************************
+
+(B) Confusion Matrix:
+[[39  0  0]
+ [19  0  0]
+ [26  0  0]]
+(C) Precision, Recall, and F1-measure for each class:
+Precision: [0.46428571 0.         0.        ]
+Recall: [1. 0. 0.]
+F1-measure: [0.63414634 0.         0.        ]
+
+(D) Accuracy, Macro-average F1, and Weighted-average F1:
+Accuracy: 0.4642857142857143
+Macro-average F1: 0.21138211382113822
+Weighted-average F1: 0.2944250871080139
+
+
+**************************************************
+BaseMLP
+**************************************************
+
+(B) Confusion Matrix:
+[[39  0  0]
+ [19  0  0]
+ [26  0  0]]
+(C) Precision, Recall, and F1-measure for each class:
+Precision: [0.46428571 0.         0.        ]
+Recall: [1. 0. 0.]
+F1-measure: [0.63414634 0.         0.        ]
+
+(D) Accuracy, Macro-average F1, and Weighted-average F1:
+Accuracy: 0.4642857142857143
+Macro-average F1: 0.21138211382113822
+Weighted-average F1: 0.2944250871080139
+
+
+**************************************************
+BaseMLP
+**************************************************
+
+(B) Confusion Matrix:
+[[39  0  0]
+ [19  0  0]
+ [26  0  0]]
+(C) Precision, Recall, and F1-measure for each class:
+Precision: [0.46428571 0.         0.        ]
+Recall: [1. 0. 0.]
+F1-measure: [0.63414634 0.         0.        ]
+
+(D) Accuracy, Macro-average F1, and Weighted-average F1:
+Accuracy: 0.4642857142857143
+Macro-average F1: 0.21138211382113822
+Weighted-average F1: 0.2944250871080139
+
+
+**************************************************
+BaseMLP
+**************************************************
+
+(B) Confusion Matrix:
+[[39  0  0]
+ [19  0  0]
+ [26  0  0]]
+(C) Precision, Recall, and F1-measure for each class:
+Precision: [0.46428571 0.         0.        ]
+Recall: [1. 0. 0.]
+F1-measure: [0.63414634 0.         0.        ]
+
+(D) Accuracy, Macro-average F1, and Weighted-average F1:
+Accuracy: 0.4642857142857143
+Macro-average F1: 0.21138211382113822
+Weighted-average F1: 0.2944250871080139
+
+
+**************************************************
+Average and Variance for BaseMLP
+**************************************************
+(A) Average Accuracy: 0.4642857142857143, Variance: 0.0
+(B) Average Macro-average F1: 0.21138211382113822, Variance: 0.0
+(C) Average Weighted-average F1: 0.2944250871080139, Variance: 0.0
+
+
+**************************************************
+TopMLP
+**************************************************
+
+(B) Confusion Matrix:
+[[ 0  0 41]
+ [ 0  0 12]
+ [ 0  0 31]]
+(C) Precision, Recall, and F1-measure for each class:
+Precision: [0.         0.         0.36904762]
+Recall: [0. 0. 1.]
+F1-measure: [0.         0.         0.53913043]
+
+(D) Accuracy, Macro-average F1, and Weighted-average F1:
+Accuracy: 0.36904761904761907
+Macro-average F1: 0.17971014492753623
+Weighted-average F1: 0.1989648033126294
+
+
+**************************************************
+TopMLP
+**************************************************
+
+(B) Confusion Matrix:
+[[35  0  6]
+ [12  0  0]
+ [ 3  0 28]]
+(C) Precision, Recall, and F1-measure for each class:
+Precision: [0.7        0.         0.82352941]
+Recall: [0.85365854 0.         0.90322581]
+F1-measure: [0.76923077 0.         0.86153846]
+
+(D) Accuracy, Macro-average F1, and Weighted-average F1:
+Accuracy: 0.75
+Macro-average F1: 0.5435897435897435
+Weighted-average F1: 0.6934065934065934
+
+
+**************************************************
+TopMLP
+**************************************************
+
+(B) Confusion Matrix:
+[[41  0  0]
+ [12  0  0]
+ [31  0  0]]
+(C) Precision, Recall, and F1-measure for each class:
+Precision: [0.48809524 0.         0.        ]
+Recall: [1. 0. 0.]
+F1-measure: [0.656 0.    0.   ]
+
+(D) Accuracy, Macro-average F1, and Weighted-average F1:
+Accuracy: 0.4880952380952381
+Macro-average F1: 0.21866666666666665
+Weighted-average F1: 0.32019047619047614
+
+
+**************************************************
+TopMLP
+**************************************************
+
+(B) Confusion Matrix:
+[[41  0  0]
+ [12  0  0]
+ [31  0  0]]
+(C) Precision, Recall, and F1-measure for each class:
+Precision: [0.48809524 0.         0.        ]
+Recall: [1. 0. 0.]
+F1-measure: [0.656 0.    0.   ]
+
+(D) Accuracy, Macro-average F1, and Weighted-average F1:
+Accuracy: 0.4880952380952381
+Macro-average F1: 0.21866666666666665
+Weighted-average F1: 0.32019047619047614
+
+
+**************************************************
+TopMLP
+**************************************************
+
+(B) Confusion Matrix:
+[[38  0  3]
+ [12  0  0]
+ [ 0  0 31]]
+(C) Precision, Recall, and F1-measure for each class:
+Precision: [0.76       0.         0.91176471]
+Recall: [0.92682927 0.         1.        ]
+F1-measure: [0.83516484 0.         0.95384615]
+
+(D) Accuracy, Macro-average F1, and Weighted-average F1:
+Accuracy: 0.8214285714285714
+Macro-average F1: 0.5963369963369963
+Weighted-average F1: 0.7596546310832025
+
+
+**************************************************
+Average and Variance for TopMLP
+**************************************************
+(A) Average Accuracy: 0.8214285714285714, Variance: 0.0
+(B) Average Macro-average F1: 0.5963369963369963, Variance: 0.0
+(C) Average Weighted-average F1: 0.7596546310832025, Variance: 0.0
+
+
+**************************************************
+TopMLP
+**************************************************
+
+(B) Confusion Matrix:
+[[103  42 177]
+ [ 14 254  59]
+ [ 96  71 229]]
+(C) Precision, Recall, and F1-measure for each class:
+Precision: [0.48356808 0.69209809 0.49247312]
+Recall: [0.31987578 0.77675841 0.57828283]
+F1-measure: [0.38504673 0.73198847 0.53193961]
+
+(D) Accuracy, Macro-average F1, and Weighted-average F1:
+Accuracy: 0.5607655502392345
+Macro-average F1: 0.5496582689015925
+Weighted-average F1: 0.5492759434451825
+
+
+**************************************************
+TopMLP
+**************************************************
+
+(B) Confusion Matrix:
+[[  1  46 275]
+ [  0 255  72]
+ [  3  75 318]]
+(C) Precision, Recall, and F1-measure for each class:
+Precision: [0.25       0.67819149 0.47819549]
+Recall: [0.00310559 0.77981651 0.8030303 ]
+F1-measure: [0.00613497 0.7254623  0.5994345 ]
+
+(D) Accuracy, Macro-average F1, and Weighted-average F1:
+Accuracy: 0.5492822966507177
+Macro-average F1: 0.4436772564978481
+Weighted-average F1: 0.4560552095551338
+
+
+**************************************************
+TopMLP
+**************************************************
+
+(B) Confusion Matrix:
+[[156  44 122]
+ [ 32 250  45]
+ [170  73 153]]
+(C) Precision, Recall, and F1-measure for each class:
+Precision: [0.43575419 0.68119891 0.478125  ]
+Recall: [0.48447205 0.76452599 0.38636364]
+F1-measure: [0.45882353 0.7204611  0.4273743 ]
+
+(D) Accuracy, Macro-average F1, and Weighted-average F1:
+Accuracy: 0.5349282296650718
+Macro-average F1: 0.5355529753962023
+Weighted-average F1: 0.5287772038586201
+
+
+**************************************************
+TopMLP
+**************************************************
+
+(B) Confusion Matrix:
+[[ 30  31 261]
+ [  2 229  96]
+ [ 43  59 294]]
+(C) Precision, Recall, and F1-measure for each class:
+Precision: [0.4        0.71786834 0.4516129 ]
+Recall: [0.0931677  0.70030581 0.74242424]
+F1-measure: [0.1511335  0.70897833 0.56160458]
+
+(D) Accuracy, Macro-average F1, and Weighted-average F1:
+Accuracy: 0.5291866028708134
+Macro-average F1: 0.47390547132001365
+Weighted-average F1: 0.48124049396269325
+
+
+**************************************************
+TopMLP
+**************************************************
+
+(B) Confusion Matrix:
+[[ 81  39 202]
+ [ 15 247  65]
+ [105  67 224]]
+(C) Precision, Recall, and F1-measure for each class:
+Precision: [0.40298507 0.69971671 0.45621181]
+Recall: [0.2515528  0.75535168 0.56565657]
+F1-measure: [0.30975143 0.72647059 0.50507328]
+
+(D) Accuracy, Macro-average F1, and Weighted-average F1:
+Accuracy: 0.5282296650717704
+Macro-average F1: 0.5137651009970814
+Weighted-average F1: 0.5141673332801441
+
+
+**************************************************
+Average and Variance for TopMLP
+**************************************************
+(A) Average Accuracy: 0.5282296650717704, Variance: 0.0
+(B) Average Macro-average F1: 0.5137651009970814, Variance: 0.0
+(C) Average Weighted-average F1: 0.5141673332801441, Variance: 0.0

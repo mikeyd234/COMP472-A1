@@ -11,10 +11,13 @@ class Plotter:
     def plot(self):
         """ Function for plotting the instances of an output class in a given dataset. """
         # Count the instances of the output classes
-        if self.penguin:
-            class_cnts = self.data['species'].value_counts()
-        else:
-            class_cnts = self.data['Type'].value_counts()
+        class_column = 'Type' if not self.penguin else 'species'
+        if class_column not in self.data.columns:
+            print(f"Column {class_column} not found in the dataset.")
+            return
+
+        # Count the instances of the output classes
+        class_cnts = self.data[class_column].value_counts()
 
         # Find the percentage
         class_perc = class_cnts / class_cnts.sum() * 100

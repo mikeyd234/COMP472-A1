@@ -15,8 +15,8 @@ class Splitter:
 			# Target column
 			target = self.data['species']
 		else:
-			features = self.data.drop(colums = ['type'])
-			target = self.data['type']
+			features = self.data.drop(columns = ['Type'])
+			target = self.data['Type']
 
 		# Split the dataset into a training set and a test set with default parameter values
 		features_train, features_test, target_train, target_test= train_test_split(features, target)
