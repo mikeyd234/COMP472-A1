@@ -6,7 +6,11 @@ from topMLP import TopMLP
 from base_dt import BaseDT
 
 # Access the dataset
-filepath = 'C:/Users/pavit/OneDrive/Documents/Fall_2023/COMP_472/COMP472-A1/COMP472-A1-datasets/abalone.csv'
+filepath = '/Users/ashaislam/Documents/GitHub/COMP472-A1/COMP472-A1-datasets/abalone.csv'
+
+#comment out if you're using a mac, if not, then put your own filepath!
+#filepath = 'C:/Users/pavit/OneDrive/Documents/Fall_2023/COMP_472/COMP472-A1/COMP472-A1-datasets/abalone.csv'
+
 abalone_dataset = pd.read_csv(filepath)
 
 # Display the first few columns from the dataset 
