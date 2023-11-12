@@ -3,6 +3,7 @@ from plotter import Plotter
 from splitter import Splitter
 from baseMLP import BaseMLP
 from topMLP import TopMLP
+from base_dt import BaseDT
 
 # Access the dataset
 filepath = 'C:/Users/pavit/OneDrive/Documents/Fall_2023/COMP_472/COMP472-A1/COMP472-A1-datasets/abalone.csv'
@@ -34,3 +35,8 @@ abalone_base_mlp.base_mlp(features_train, features_test, target_train, target_te
 abalone_top_mlp = TopMLP()
 
 abalone_top_mlp.top_mlp(features_train, features_test, target_train, target_test)
+
+#train and test the base DT classifier 
+abalone_base_dt = BaseDT()
+
+abalone_base_dt.base_dt(features_train, features_test, target_train, target_test)
