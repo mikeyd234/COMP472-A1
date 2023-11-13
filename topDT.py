@@ -13,46 +13,46 @@ from sklearn.metrics import f1_score
 
 class TopDT:
     def top_dt(features_train, features_test, target_train, target_test):
-        # Define the parameter grid to search
+        # define parameter grid to search
         param_grid = {
             'criterion': ['gini', 'entropy'],
             'max_depth': [None, 10, 20],
             'min_samples_split': [2, 10, 20]
         }
 
-        # Initialize the classifier
+        # initialize classifier
         dt_classifier = DecisionTreeClassifier(random_state=42)
 
-        # Initialize the GridSearchCV object
+        # gridsearch
         grid_search = GridSearchCV(dt_classifier, param_grid, cv=5, scoring='accuracy')
 
-        # Fit the grid search to the data
+        # fit grid search to the data
         grid_search.fit(features_train, target_train)
 
-        # Get the best estimator and print the details
+        # best estimator and 
         best_classifier = grid_search.best_estimator_
     
-        # Use the best classifier to predict on the test set
+        # best classifier to predict on the test set
         target_pred = best_classifier.predict(features_test)
 
         print("Best parameters found:", grid_search.best_params_)
         print("Best score found:", grid_search.best_score_)
 
-        # Calculate the evaluation metrics
+        # evaluation metrics
         accuracy = accuracy_score(target_test, target_pred)
         precision = precision_score(target_test, target_pred, average=None)
         recall = recall_score(target_test, target_pred, average=None)
         f1 = f1_score(target_test, target_pred, average=None)
         confusion_mat = confusion_matrix(target_test, target_pred)
 
-        # Calculate macro F1 and weighted F1 separately
+        # macro F1 and weighted F1 
         f1_macro = f1_score(target_test, target_pred, average='macro')
         f1_weighted = f1_score(target_test, target_pred, average='weighted')
 
-        # Plot the best decision tree
+        # Plot best decision tree
         plt.figure(figsize=(20, 10))
         plot_tree(best_classifier, filled=True, max_depth=3)  # Set max_depth to your preferred value for visualization
-        plt.title('Best Decision Tree from GridSearchCV')
+        plt.title('Top Decision Tree')
         plt.show()
 
         return accuracy, precision, recall, f1, confusion_mat, f1_macro, f1_weighted

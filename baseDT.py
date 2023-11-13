@@ -13,30 +13,30 @@ from sklearn.metrics import f1_score
 
 class BaseDT:
     def base_dt(features_train, features_test, target_train, target_test):
-        # Initialize the Decision Tree Classifier with default parameters
+        # classifier with default parameters
         classifier = DecisionTreeClassifier(random_state=42)
 
-        # Train the Decision Tree Classifier
+        # train Decision Tree Classifier
         classifier.fit(features_train, target_train)
 
-        # Predict on the test set
+        # predict on test set
         target_pred = classifier.predict(features_test)
 
-        # Calculate the evaluation metrics
+        # evaluation metrics
         accuracy = accuracy_score(target_test, target_pred)
         precision = precision_score(target_test, target_pred, average=None)
         recall = recall_score(target_test, target_pred, average=None)
         f1 = f1_score(target_test, target_pred, average=None)
         confusion_mat = confusion_matrix(target_test, target_pred)
 
-        # Calculate macro F1 and weighted F1 separately
+        # macro F1 and weighted F1
         f1_macro = f1_score(target_test, target_pred, average='macro')
         f1_weighted = f1_score(target_test, target_pred, average='weighted')
 
-        # Plot the decision tree
+        # plot decision tree
         plt.figure(figsize=(20,10))
         plot_tree(classifier, filled=True)
-        plt.title("Decision Tree for Dataset")
+        plt.title(" Base Decision Tree for Dataset")
         plt.show()
         
         return accuracy, precision, recall, f1, confusion_mat, f1_macro, f1_weighted

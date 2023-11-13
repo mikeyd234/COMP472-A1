@@ -8,7 +8,8 @@ from topDT import TopDT
 from baseDT import BaseDT
 
 # Access the dataset
-filepath = 'C:/Users/Michael/source/repos/COMP472-A1/COMP472-A1-datasets/abalone.csv'
+#filepath = 'C:/Users/Michael/source/repos/COMP472-A1/COMP472-A1-datasets/abalone.csv'
+filepath = '/Users/ashaislam/Documents/GitHub/COMP472-A1/COMP472-A1-datasets/abalone.csv'
 abalone_dataset = pd.read_csv(filepath)
 
 # Display the first few columns from the dataset 

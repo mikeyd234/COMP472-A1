@@ -11,7 +11,7 @@ from sklearn.metrics import f1_score
 class BaseMLP:
   def base_mlp(features_train, features_test, target_train, target_test):
     # Create the Base Multi-Layered Perceptron classifier with the given parameters
-    clf = MLPClassifier(hidden_layer_sizes=(100, 100), activation='logistic', solver='sgd', max_iter=1024)
+    clf = MLPClassifier(hidden_layer_sizes=(100, 100), activation='logistic', solver='sgd', max_iter=2000)
     # Train the Base-MLP
     clf.fit(features_train, target_train)
 

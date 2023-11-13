@@ -9,7 +9,8 @@ from topDT import TopDT
 from baseDT import BaseDT
 
 # Load the Penguin dataset
-file_path = "C:/Users/Michael/source/repos/COMP472-A1/COMP472-A1-datasets/penguins.csv"
+#file_path = "C:/Users/Michael/source/repos/COMP472-A1/COMP472-A1-datasets/penguins.csv"
+file_path = '/Users/ashaislam/Documents/GitHub/COMP472-A1/COMP472-A1-datasets/penguins.csv'
 penguins_data = pd.read_csv(file_path)
 
 # Display all columns in the dataset
